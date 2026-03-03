@@ -1,0 +1,139 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "Swiss Ephemeris",
+  "projectDescription": "High-precision astronomical calculation library for planetary positions, eclipses, houses, and ephemeris data",
+  "theme": "sequoia",
+  "primaryColor": "#1e3a8a",
+  "lightColor": "#3b82f6",
+  "darkColor": "#1e1b4b",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/ephemeris-data",
+              "concepts/coordinate-systems",
+              "concepts/time-systems",
+              "concepts/precision-accuracy"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/planetary-calculations",
+              "guides/eclipses-occultations",
+              "guides/house-systems",
+              "guides/fixed-stars",
+              "guides/date-time-conversion",
+              "guides/sidereal-calculations",
+              "guides/heliacal-events"
+            ]
+          },
+          {
+            "group": "Advanced Topics",
+            "pages": [
+              "advanced/ephemeris-files",
+              "advanced/error-handling",
+              "advanced/performance-optimization",
+              "advanced/language-bindings"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core Functions",
+            "pages": [
+              "api/initialization",
+              "api/planetary-positions",
+              "api/fixed-stars"
+            ]
+          },
+          {
+            "group": "Eclipse & Events",
+            "pages": [
+              "api/solar-eclipses",
+              "api/lunar-eclipses",
+              "api/occultations",
+              "api/rise-set-transit",
+              "api/heliacal-phenomena"
+            ]
+          },
+          {
+            "group": "Houses & Angles",
+            "pages": [
+              "api/house-calculation",
+              "api/house-systems",
+              "api/astrological-angles"
+            ]
+          },
+          {
+            "group": "Date & Time",
+            "pages": [
+              "api/julian-day",
+              "api/calendar-conversion",
+              "api/delta-t",
+              "api/sidereal-time"
+            ]
+          },
+          {
+            "group": "Coordinate Systems",
+            "pages": [
+              "api/coordinate-transformation",
+              "api/ayanamsa",
+              "api/precession-nutation"
+            ]
+          },
+          {
+            "group": "Utility Functions",
+            "pages": [
+              "api/utility-functions",
+              "api/constants-flags",
+              "api/error-codes"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "High-precision planetary position calculations using JPL ephemeris data",
+    "Solar and lunar eclipse computations with geographic locations",
+    "Multiple astrological house system support (Placidus, Koch, etc.)",
+    "Fixed star positions with proper motion corrections",
+    "Sidereal and tropical zodiac calculations with multiple ayanamsas",
+    "Date and time conversion functions (Julian day, calendar systems)",
+    "Rise, set, and transit time calculations for celestial objects",
+    "Heliacal rising and setting phenomena computations"
+  ],
+  "publicApiSurface": [
+    "swe_calc() - Calculate planetary positions",
+    "swe_calc_ut() - Calculate positions with Universal Time",
+    "swe_fixstar() - Calculate fixed star positions",
+    "swe_houses() - Calculate house cusps and angles",
+    "swe_sol_eclipse_when_glob() - Find next solar eclipse globally",
+    "swe_lun_eclipse_when() - Find next lunar eclipse",
+    "swe_rise_trans() - Calculate rise, set, and transit times",
+    "swe_julday() - Convert calendar date to Julian day",
+    "swe_revjul() - Convert Julian day to calendar date",
+    "swe_set_ephe_path() - Set ephemeris file directory",
+    "swe_set_sid_mode() - Set sidereal mode and ayanamsa",
+    "swe_get_ayanamsa() - Get ayanamsa value",
+    "swe_cotrans() - Transform coordinates",
+    "swe_deltat() - Calculate Delta T",
+    "swe_close() - Close Swiss Ephemeris and free resources"
+  ]
+}
